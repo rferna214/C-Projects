@@ -5,6 +5,7 @@
 #include "./headers/Decisions.h"
 #include "./headers/Loops.h"
 #include "./headers/Functions.h"
+#include "./headers/Pointers.h"
 
 int main(void){
     //puts("Hello World!!!!");
@@ -26,15 +27,21 @@ int main(void){
     // loops5();
     // Testing functions functionality
     // declare three charaters arrays and initialize them
-    char student[] = "Ron";
-    char course[] = "Ruby";
-    char programmer[] = "Yukihiro Matsumoto";
-    congratulate1(student, course, programmer);
-    congratulate2(student, course, programmer);
-    printf("%.2f degrees celsius = %.2f degrees fahrenheit\n",
-    0.0, fahrenheitFromCelsius(0.0));
+    // char student[] = "Ron";
+    // char course[] = "Ruby";
+    // char programmer[] = "Yukihiro Matsumoto";
+    // congratulate1(student, course, programmer);
+    // congratulate2(student, course, programmer);
+    // printf("%.2f degrees celsius = %.2f degrees fahrenheit\n",
+    // 0.0, fahrenheitFromCelsius(0.0));
+    // printf("%.2f degrees celsius = %.2f degrees fahrenheit\n",
+    // 100.0, fahrenheitFromCelsius(100.0));
 
-    printf("%.2f degrees celsius = %.2f degrees fahrenheit\n",
-    100.0, fahrenheitFromCelsius(100.0));
+    //testing Pointers functionality
+    printAddress();
+    printf("The global variable i stores its value at %p\n", getAddress());
+    printf("The global static variable i stores %d\n", getDataAtAddress());
+
+
 
 }
