@@ -7,6 +7,9 @@
 #include "./headers/Functions.h"
 #include "./headers/Pointers.h"
 #include "./headers/PassByReference.h"
+#include "./headers/Assignment.h"
+#include "./headers/AssignmentC.h"
+
 
 int main(void){
     //puts("Hello World!!!!");
@@ -48,16 +51,39 @@ int main(void){
     // pointerToNull();
     //testing Pass by reference functionality
     // declare doubles for (x,y) point
-    double x = 3.0;
-    double y = 4.0;
+    // double x = 3.0;
+    // double y = 4.0;
 
-    // declare doubles for (radiusPtr, thetaPtr)
-    double radiusPtr;
-    double thetaPtr;
+    // // declare doubles for (radiusPtr, thetaPtr)
+    // double radiusPtr;
+    // double thetaPtr;
 
-    // call cartesianToPolar
-    // must use the & to access an address of a variable
-    cartesianToPolar(x, y, &radiusPtr, &thetaPtr);
+    // // call cartesianToPolar
+    // // must use the & to access an address of a variable
+    // cartesianToPolar(x, y, &radiusPtr, &thetaPtr);
 
-    printf("(%.2f, %.2f) equals (%.2f, %.2f)\n", x, y, radiusPtr, thetaPtr);
+    // printf("(%.2f, %.2f) equals (%.2f, %.2f)\n", x, y, radiusPtr, thetaPtr);
+    
+
+    // // declare and initialize start and stop
+    // // local variables
+    // int start = 0;
+    // int stop = 10;
+    // // call oddOrEven providing start and stop variables
+    // // as arguments
+    // oddOrEven(start, stop);
+    // // call oddOrEvenByReference providing start and stop variables
+    // // as arguments
+    // oddOrEvenByReference(&start, &stop);
+    // return EXIT_SUCCESS;
+
+    int n = 4;
+    int p = 3;
+    genPower(n,p);
+
+    
+    genPowerReference(&n,&p);
+
+    printf("%d taken to the power of %d is %d\n",n,p);
+    
 }

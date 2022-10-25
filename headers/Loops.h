@@ -1,6 +1,6 @@
 // Include pre-processor directives
 #include <stdio.h>
-# define STOP 0
+#define STOP 0
 #define START 10
 // defined macro expressions
 #define condition(i) (i > STOP)
